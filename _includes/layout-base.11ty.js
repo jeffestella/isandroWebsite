@@ -1,8 +1,9 @@
 exports.data = {
-    title: "Benicio Isandro Site"
+    // title: "Benicio Isandro Site"
 }
 
-exports.render = () => {
+exports.render = (data, content) => {
+    const title = data.title ? `<h1>${data.title}` : "" ;
 
 return `<!DOCTYPE html>
 <html>
@@ -10,7 +11,7 @@ return `<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>${data.title}</title>
+    <title>Benicio Isandro</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
@@ -21,22 +22,22 @@ return `<!DOCTYPE html>
 <body>
     <header class="nav-container">
         <nav class="navbar">
-            <h1 id="navbar-logo">Benicio Isandro</h1>
+            <h1 id="navbar-logo"><a href="/home">Benicio Isandro</a></h1>
             <div class="menu-toggle" id="mobile-menu">
                 <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
             </div>
             <div class="nav-menu">
-                <a href="/" class="nav-link">About</a>
-                <a href="/writing.html" class="nav-link">Writing</a>
-                <a href="/contact.html" class="nav-link">Contact</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/writing" class="nav-link">Writing</a>
+                <a href="/contact" class="nav-link">Contact</a>
             </div>
         </nav>
     </header>
 
     <main class="content-container" >
         <section class="content about-content">
-        <h1>{{title}}</h1>
-            {{content}}
+            ${title}
+            ${data.content}
         </section>
     </main>
 
