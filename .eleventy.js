@@ -1,3 +1,3 @@
 module.exports = {
-    markdownTemplateEngine: "njk"
+    markdownTemplateEngine: "11ty.js"
 };

@@ -1,10 +1,16 @@
-<!DOCTYPE html>
+exports.data = {
+    title: "Benicio Isandro Site"
+}
+
+exports.render = () => {
+
+return `<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>${data.title}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
@@ -29,10 +35,8 @@
 
     <main class="content-container" >
         <section class="content about-content">
-        <h1>post 1 title</h1>
-            <h1>post 1 title</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vero aliquid facere delectus blanditiis voluptate veritatis, nulla illo, quas excepturi sapiente nemo at tenetur voluptates sed porro similique laudantium praesentium?</p>
-
+        <h1>{{title}}</h1>
+            {{content}}
         </section>
     </main>
 
@@ -51,4 +55,5 @@
     <script src="./app.js"></script>
 </body>
 
-</html>
+</html>`;
+};
