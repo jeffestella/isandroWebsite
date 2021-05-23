@@ -1,9 +1,11 @@
+const notionContent = require("../_data/notionContent");
+
 exports.data = {
     title: "Selected Works",
-    pagination: {
-        data: this.notionContent,
-        size: 2
-    }
+    // pagination: {
+    //     data: notionContent,
+    //     size: 2
+    // }
 }
 
 exports.render = (data) => {
@@ -21,5 +23,8 @@ exports.render = (data) => {
     <ul>
     ${publishedWriting.join('')}
     </ul>
+    <p>
+    ${notionContent}
+    </p>
     `
 }
