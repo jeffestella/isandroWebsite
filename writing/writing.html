@@ -1,0 +1,16 @@
+---
+layout: base.liquid
+title: Selected Works
+pagination: 
+    data: notionContent
+    size: 1000
+---
+
+{% for item in pagination.items %}
+<ul>
+    {% if item.fields.published %}
+        <li><a href="{{ pagination.hrefs[ loop.index0 ] }}">{{item.fields.title}}</a></li>
+    {% endif %}
+</ul>
+
+{% endfor %}

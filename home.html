@@ -1,0 +1,15 @@
+---
+layout: base.liquid
+title: Home Page
+permalink: "/"
+---
+
+<p>Ut ullam inventore alias qui molestiae quibusdam velit omnis. Mollitia tempore soluta autem. Voluptatum molestiae sequi est quo illo ex unde. Omnis soluta accusamus excepturi quaerat qui rerum nobis. Nostrum fuga ut fuga impedit. Nihil soluta tempora et doloribus rem reiciendis.</p>
+
+<ul>
+{%- for post in notionContent %}
+    {%- if post.fields.published %}
+        <li>{{post.fields.title}}</li>
+    {%- endif %}
+{%- endfor %}
+</ul>
