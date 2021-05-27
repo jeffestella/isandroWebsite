@@ -1,16 +1,22 @@
 ---
 layout: base.liquid
 title: Selected Works
+permalink: "/writing/{{pagination.pages[0].fields.slug}}"
 pagination: 
     data: notionContent
-    size: 1000
+    size: 10
 ---
 
 {% for item in pagination.items %}
 <ul>
     {% if item.fields.published %}
-        <li><a href="{{ pagination.hrefs[ loop.index0 ] }}">{{item.fields.title}}</a></li>
+        <li>
+            <a href="">{{item.fields.title}}</a>
+        </li>
     {% endif %}
 </ul>
 
 {% endfor %}
+
+<p>{{pagination.hrefs}}</p>
+<p>{{pagination.items}}</p>
