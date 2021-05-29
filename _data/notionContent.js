@@ -11,7 +11,9 @@ module.exports = async () => {
         post.fields.text = await postData.text();
     }
 
-    return notionContent
+    publishedPosts = notionContent.filter((post) => post.fields.published)
+
+    return publishedPosts
 }
 
 

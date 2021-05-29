@@ -7,16 +7,14 @@ pagination:
     size: 10
 ---
 
-{% for item in pagination.items %}
+{% for post in pagination.pages %}
 <ul>
-    {% if item.fields.published %}
-        <li>
-            <a href="">{{item.fields.title}}</a>
-        </li>
-    {% endif %}
+    <li>
+        <a href="">{{post.fields.title}}</a>
+    </li>
 </ul>
 
 {% endfor %}
 
 <p>{{pagination.hrefs}}</p>
-<p>{{pagination.items}}</p>
+<p>{{pagination.pages}}</p>

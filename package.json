@@ -1,0 +1,25 @@
+{
+  "name": "isandroWebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eleventy.js",
+  "dependencies": {
+    "liquidjs": "^9.25.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffestella/isandroWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffestella/isandroWebsite/issues"
+  },
+  "homepage": "https://github.com/jeffestella/isandroWebsite#readme"
+}
