@@ -1,0 +1,10 @@
+---
+layout: base.liquid
+pagination: 
+    data: notionContent
+    size: 1
+    alias: "post"
+permalink: "/writing/{{post.fields.title | slug}}/"
+---
+<h1>{{ post.fields.title }}</h1>
+{{ post.fields.text }}
