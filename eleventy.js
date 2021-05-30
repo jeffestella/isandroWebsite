@@ -1,8 +1,9 @@
 module.exports = {
     dir: {
-        includes: "_includes"
+    includes: "_includes",
+    input: "src"
     },
-    templateFormats: ["html", "md"],
+    templateFormats: ["html", "md", "css"],
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "liquid"
-};
+};  
