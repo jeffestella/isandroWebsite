@@ -1,9 +1,8 @@
-module.exports = {
-    dir: {
-    includes: "_includes",
-    input: "src"
-    },
-    templateFormats: ["html", "md", "css"],
-    markdownTemplateEngine: "liquid",
-    htmlTemplateEngine: "liquid"
-};  
+module.exports = function(eleventyConfig) {
+    eleventyConfig.addPassthroughCopy("./src/css");
+    return {
+        templateFormats: ["html", "md"],
+        markdownTemplateEngine: "liquid",
+        htmlTemplateEngine: "liquid"
+    };
+};
