@@ -1,7 +1,11 @@
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("./src/css");
+    eleventyConfig.addPassthroughCopy("./src/css/");
     return {
-        templateFormats: ["html", "md"],
+        dir: {
+            input: "src",
+            output: "_site"
+        },
+        templateFormats: ["html", "md", "liquid"],
         markdownTemplateEngine: "liquid",
         htmlTemplateEngine: "liquid"
     };
