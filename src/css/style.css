@@ -1,5 +1,132 @@
+/*
+font-family: 'Cormorant Garamond', serif;
+font-family: 'IM Fell English', serif;
+font-family: 'IM Fell English SC', serif;
+
+Xiketic #0E0C13
+Old Lavender #635C72
+Dark Purple #2C263B
+Rhythm #7E7A99
+Lavender Web #E0DCEA
+
+Turquoise Green #A1DCC1
+Light Cyan #D3F3EB
+
+*/
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
 body {
-    font-family: sans-serif;
-    color: red; 
-    background-color: yellowgreen;
+
+    background-color: #0E0C13;
+
+    color:#ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+
+    min-width: 360px;
+    max-width: 1000px;
+    min-height: 100vh;
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a {
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar {
+    /* border: 2px solid red; */
+
+    background-color: #2C263B;
+    width: 15vw;
+    height: 100vh;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: fixed;
+
+    transition: 200ms ease;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar-logo a {
+    font-size: 2.5rem;
+}
+
+.nav-links {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar ul {
+    align-items: center;
+}
+
+.nav-item {
+    width: 100%;
+    padding: 2%;
+    height: 15vh;
+
+    font-size: 1.1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item .nav-text {
+    font-size: 2rem;
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-item.social-media-links {
+    border: 2px solid red;
+
+    align-items: space-between;
+    width: 100%;
+}
+
+.navbar:hover {
+    width: 30vw;
+}
+
+.navbar:hover .nav-text {
+    display: inline;
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
 }
