@@ -3,4 +3,15 @@ layout: base.liquid
 title: Contact
 ---
 
-<p>Ut ullam inventore alias qui molestiae quibusdam velit omnis. Mollitia tempore soluta autem. Nostrum fuga ut fuga impedit. Nihil soluta tempora et doloribus rem reiciendis.</p>
+<p>
+    You can get in touch with me via email at <a href="mailto:benicio.isandro@gmail.com">benicio.isandro@gmail.com</a>
+    or by filling the form below.
+</p>
+
+<form id="contact-form" action="https://formsubmit.co/benicio.isandro@gmail.com" method="POST">
+    <input type="text" name="name" class="contact-form-name" placeholder="Jamie Smith" required /><br>
+    <input type="email" name="email" class="contact-form-email" placeholder="jamiesmith@email.com" required /><br>
+    <textarea type="text" name="message" class="contact-form-message" placeholder="Hi Beni! ..."
+        required></textarea><br>
+    <button type="submit">Submit</button>
+</form>

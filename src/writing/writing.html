@@ -1,13 +1,11 @@
 ---
 layout: base.liquid
 ---
+<h1 class="section-title">Published Work</h2>
 
-<h1>Selected Works</h1>
-<h2>Published Work</h2>
-
-<h2>Poetry</h2>
+<h1 class="section-title">Poetry</h2>
 {% for post in notionContent %}
-<ul>
+<ul class="writing-list">
     <li><a href="./{{ post.fields.title | slug}}">{{ post.fields.title }}</a></li>
 </ul>
 {% endfor %}

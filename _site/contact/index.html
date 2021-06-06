@@ -13,48 +13,36 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li class="navbar-logo nav-item">
-                <a href="/">
-                    <i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i>
-                    <span class="nav-text">Benicio Isandro</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="/about" class="nav-link">
-                    <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
-                    <span class="nav-text">About</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="/writing" class="nav-link">
-                    <i class="fa fa-book fa-2x" aria-hidden="true"></i>
-                    <span class="nav-text">Writing</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="/contact" class="nav-link">
-                    <i class="fa fa-comments fa-2x" aria-hidden="true"></i>
-                    <span class="nav-text">Contact</span>
-                </a>
-            </li>
-            <li class="nav-item social-media-links">
-                <a href="mailto:benicio.isandro@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/benicioisandro"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-                <a href="https://www.twitter.com/benicioisandro"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-            </li>
-        </ul>
-    </nav>
+    <header class="nav-container">
+        <nav class="navbar">
+            <a href="/"id="navbar-logo">Benicio Isandro</a>
+            <div class="nav-menu">
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/writing/" class="nav-link">Writing</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
 
     <main class="content-container" >
         <section class="content">
             <p>
                  
-                <h1>Contact</h1>
+                <h1 class="section-title">Contact</h1>
                 
                 
-<p>Ut ullam inventore alias qui molestiae quibusdam velit omnis. Mollitia tempore soluta autem. Nostrum fuga ut fuga impedit. Nihil soluta tempora et doloribus rem reiciendis.</p>
+<p>
+    You can get in touch with me via email at <a href="mailto:benicio.isandro@gmail.com">benicio.isandro@gmail.com</a>
+    or by filling the form below.
+</p>
+
+<form id="contact-form" action="https://formsubmit.co/benicio.isandro@gmail.com" method="POST">
+    <input type="text" name="name" class="contact-form-name" placeholder="Jamie Smith" required /><br>
+    <input type="email" name="email" class="contact-form-email" placeholder="jamiesmith@email.com" required /><br>
+    <textarea type="text" name="message" class="contact-form-message" placeholder="Hi Beni! ..."
+        required></textarea><br>
+    <button type="submit">Submit</button>
+</form>
 
             </p>
         </section>
@@ -63,8 +51,13 @@
     <footer class="footer-container">
         <section class="footer-content">
             <section class="copyright">
-                Copyright &copy; 2020-
+                Copyright &copy; 2020 -
                 <script>document.write(new Date().getFullYear())</script> Benicio Isandro
+            </section>
+            <section class="social-media-links">
+                <a href="mailto:benicio.isandro@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/benicioisandro"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com/benicioisandro"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
             </section>
         </section>
     </footer>

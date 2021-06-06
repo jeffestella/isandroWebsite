@@ -6,5 +6,16 @@ pagination:
     alias: "post"
 permalink: "/writing/{{post.fields.title | slug}}/"
 ---
-<h1>{{ post.fields.title }}</h1>
+<h1 class="section-title">{{ post.fields.title }}</h1>
+
+{% if post.fields.type == "Poem" %}
+<div class="centered-text">
+{% else %}
+<div class="left-text">
+{% endif %}
 {{ post.fields.text }}
+</div>
+
+<a href="/writing/" id="writing-back-link">
+    <i class="fa fa-arrow-circle-left fa-lg" aria-hidden="true"></i>
+</a>
