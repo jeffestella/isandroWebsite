@@ -4,11 +4,17 @@ layout: base.liquid
 <h1 class="section-title">Published Work</h2>
     <ul>
         {% for post in publishedWorks %}
-            {% if post.fields.link %}
-                <li><strong>{{ post.fields.link }}</strong> — <i>{{ post.fields.publication}}</i>, {{ post.fields.issue }}</li>
-            {% else %}
-                <li><strong>{{ post.fields.title }}</strong> — <i>{{ post.fields.publication}}</i>, {{ post.fields.issue }}</li>
-            {% endif %}
+            <li>
+                {% if post.fields.link %}
+                    <strong>{{ post.fields.link }} </strong>
+                {% else %}
+                    <strong>{{ post.fields.title }} </strong>
+                {% endif %}
+                — <i>{{ post.fields.publication}}</i>, {{ post.fields.issue }} 
+                {% if post.fields.upcoming-issue %}
+                    <small>(upcoming issue)</small>
+                {% endif %}
+            </li>
         {% endfor %}
     </ul>
 <h1 class="section-title">Poetry</h2>

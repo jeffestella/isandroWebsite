@@ -80,7 +80,7 @@ a {
     flex-direction: row;
     flex-wrap: nowrap;
 
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 
     width: 50%;
@@ -165,14 +165,39 @@ a {
     text-align: center;
 }
 
-.content #beni-portrait {
-    width: 30vw;
+section.homepage-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin-top: 5%;
+}
+
+section.homepage-about #beni-photo {
+    width: 30%;
     max-width: 300px;
     height: auto;
 
     margin: 1%;
 
     object-fit: contain;
+}
+
+section.homepage-about div.homepage-about.text {
+    /* border: 2px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    width: 60%;
+}
+
+section.homepage-about p {
+    width: 100%;
 }
 
 .content ul.writing-list {
@@ -399,15 +424,29 @@ a#writing-back-link {
     }
 
     /* MAIN */
+    section.homepage-about #beni-photo {
+        width: 30%;
+        max-width: 300px;
+        height: auto;
 
-    #beni-portrait {
-    width: 90vw;
-    min-width: 300px;
-    height: auto;
+        margin: 1%;
 
-    margin: 1%;
+        object-fit: contain;
+    }
 
-    object-fit: contain;
+    section.homepage-about div.homepage-about.text {
+    /* border: 2px solid red; */
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        width: 60%;
+    }
+
+    section.homepage-about p {
+        width: 100%;
     }
 
 }
