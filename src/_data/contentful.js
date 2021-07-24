@@ -7,7 +7,7 @@ module.exports = async () => {
     });
 
     const content = async () => {
-        client.getSpace()
+        await client.getSpace()
             .then((space) => console.log(space))
             .catch(console.error)
     }
