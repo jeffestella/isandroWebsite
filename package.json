@@ -4,6 +4,7 @@
   "description": "",
   "main": "eleventy.js",
   "dependencies": {
+    "contentful": "^8.4.2",
     "liquidjs": "^9.25.0",
     "node-fetch": "^2.6.1"
   },
